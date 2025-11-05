@@ -1,0 +1,40 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#thegrid {
+    background-color: orange;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-areas: 
+        "tophat tophat tophat tophat tophat"
+        "side cont cont cont cont"
+        "side cont cont cont cont"
+        "side cont cont cont cont"
+    ;
+    width: 100%;
+    height: 100%;
+}
+
+#topbar {
+    background-color: purple;
+
+    grid-area: tophat;
+}
+
+#sidebar {
+    background-color: green;
+
+    grid-area: side;
+}
+
+#content {
+    background-color: blue;
+
+    grid-area: cont;
+}   
